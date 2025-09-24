@@ -50,7 +50,7 @@ async function randomizeCards() {
     }
 
     let horseName;
-    if (Math.random() < 0.3 && soloNames.length) {
+    if (Math.random() < 0.2 && soloNames.length) {
       horseName = getRandomItem(soloNames);
     } else {
       let prefix = getRandomItem(prefixes);
