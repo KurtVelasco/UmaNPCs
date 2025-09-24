@@ -1,0 +1,12 @@
+body {
+  background-image: url("../misc/bg2.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}

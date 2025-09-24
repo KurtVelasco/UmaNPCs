@@ -1,0 +1,73 @@
+.menu {
+  background-image: url("../misc/bg3.avif");
+  background-size: cover;
+  width: 30%;
+  padding: 10px 20px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
+}
+
+.menu-btn {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.menu-left,
+.menu-right {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-logo {
+  max-height: 40px;
+  max-width: 40px;
+  object-fit: contain;
+}
+
+.menu-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -960 960 960' fill='white' stroke='white' stroke-width='40'><path d='m321-80-71-71 329-329-329-329 71-71 400 400z'/></svg>") center / contain no-repeat;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.2); }
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}
