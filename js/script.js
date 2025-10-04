@@ -59,7 +59,7 @@ async function randomizeCards() {
     }
     cardTitle.textContent = horseName;
     cardNumber.textContent = getRandomInt(1, 16);
-    cardAvatar.src = `avatars/avatar${getRandomInt(1, 17)}.png`;
+    cardAvatar.src = `avatars/avatar${getRandomInt(1, 9)}.webp`;
 
 
     let [start, end] = getRandomItem(gradientOptions);
